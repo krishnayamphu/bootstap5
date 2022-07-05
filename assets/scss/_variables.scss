@@ -1,6 +1,11 @@
-$primary-color:#7633f9;
+$primary-color:#0d1128;
+$secondary-color:#fd5f00;
 
 $theme-colors: (
         "primary": $primary-color,
         "danger": #ff4136
 );
+
+$accent-color:$secondary-color;
+
+$white:#fff;

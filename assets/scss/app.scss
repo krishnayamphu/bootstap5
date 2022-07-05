@@ -1,2 +1,50 @@
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+/* .top-nav */
+.top-nav{
+  .site-brand{
+    h2{
+      font-size: 38px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    span{
+      display: block;
+      position: relative;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      top: -8px;
+
+    }
+  }
+  .icon-wrapper{
+    display: flex;
+    align-items: center;
+    i{
+      padding-right: 15px;
+      color:$accent-color;
+      font-size: 20px;
+    }
+    .icon-text{
+      p{
+        margin: 0;
+      }
+      p:first-child{
+        font-weight: bold;
+      }
+    }
+  }
+}
+.btn-action{
+  background-color: $accent-color;
+  padding: 5px 15px;
+  color:$white;
+  border-radius: 0;
+}
+.btn-action:hover{
+  background-color: $white;
+  border: 1px solid $accent-color;
+}
