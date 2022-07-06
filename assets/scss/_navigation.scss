@@ -1,0 +1,26 @@
+#primary-nav {
+  .nav-item.active{
+    a{
+      color: $accent-color;
+    }
+
+  }
+  .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .nav-search{
+    padding: 5px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50px;
+    input{
+      background-color: transparent;
+      border: none;
+      color:$white;
+    }
+    .btn-search{
+      color:$white;
+    }
+  }
+}

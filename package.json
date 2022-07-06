@@ -13,6 +13,7 @@
   "author": "aptech",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.6.1"
+    "bootstrap": "^4.6.1",
+    "jquery": "^3.6.0"
   }
 }
