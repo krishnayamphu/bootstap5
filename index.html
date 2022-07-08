@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/animate.css"/>
     <link rel="stylesheet" href="assets/css/app.min.css">
     <title>Bootstrap demo</title>
 
@@ -84,6 +85,7 @@
     </div>
 </header>
 
+
 <main>
     <section id="slider">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -119,18 +121,78 @@
     </section>
     <section id="showcase">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col bg-primary">adf</div>
-                <div class="col bg-warning">sf</div>
-                <div class="col bg-primary">af</div>
-                <div class="col bg-warning">asfa</div>
+            <div class="row row-cols-1 row-cols-md-4">
+                <div class="col bg-accent text-center py-5 wow fadeInUp" data-wow-duration="0.3s">
+                    <div class="showcase-icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <h4>Certified Teachers</h4>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                </div>
+                <div class="col bg-primary text-center py-5 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.04s">
+                    <div class="showcase-icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <h4>Certified Teachers</h4>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                </div>
+                <div class="col bg-accent text-center py-5 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.06s">
+                    <div class="showcase-icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <h4>Certified Teachers</h4>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                </div>
+                <div class="col bg-primary text-center py-5 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.08s">
+                    <div class="showcase-icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <h4>Certified Teachers</h4>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                </div>
+
             </div>
         </div>
-
+    </section>
+    <section id="fox-university" >
+        <div class="university-overlay">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-2 align-items-center">
+                    <div class="col">
+                        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/YA_sNH6wFA0" title="DESPICABLE ME 3 - MINIONS & GRU's All Funny Moments" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col">
+                        <h3 class="text-white wow fadeInUp" data-wow-duration="0.5s">Fox University</h3>
+                        <p class="text-white wow fadeInUp" data-wow-duration="0.5s">Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <p class="text-white wow fadeInUp" data-wow-duration="0.5s" >A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="assets/js/app.min.js"></script>
+<script>
+    var wow = new WOW(
+        {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset:       0,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+                // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null,    // optional scroll container selector, otherwise use window,
+            resetAnimation: true,     // reset animation on end (default is true)
+        }
+    );
+    wow.init();
+</script>
+
 </body>
 </html>

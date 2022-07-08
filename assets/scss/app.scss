@@ -1,5 +1,7 @@
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "colors";
+@import "reboot";
 @import "navigation";
 /* .top-nav */
 .top-nav{
@@ -47,4 +49,24 @@
 .btn-action:hover{
   background-color: $white;
   border: 1px solid $accent-color;
+}
+
+/* #showcase */
+#showcase{
+  color:$white;
+  .showcase-icon{
+      font-size: 60px;
+    color:$white;
+  }
+}
+
+/* #fox-university */
+#fox-university{
+  background-image: url("../images/p3.webp");
+  background-size: cover;
+  .university-overlay{
+    padding: 112px 0;
+    background: linear-gradient(45deg,rgba(13,70,40,0.5),rgba(253,95,0,1));
+
+  }
 }
